@@ -1,0 +1,110 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Author" content="osman oz" />
+
+    <title>Arrays1</title>
+    <style>
+      ol {
+        list-style-type: disc;
+      }
+    </style>
+  </head>
+
+
+
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <body>
+      <P class="dotted">
+
+    <ol class="dotted" id="pp"></ol>
+    <script>
+        
+
+
+
+
+      function ordinal_suffix_of(i) {
+        var j = i % 10,
+          k = i % 100;
+        if (j == 0 && k != 0 && i != 10) {
+          return i + "ste";
+        }
+        if (j == 1 && k != 11) {
+          return i + "ste";
+        }
+        if (j == 8 && k != 18) {
+          return i + "ste";
+        }
+        if (i > 0 && i < 20) {
+          return i + "de";
+        }
+        return i + "ste";
+      }
+
+
+
+
+      let x = [
+        "audia1",
+        "audia2",
+        "audia3",
+        "audia4",
+        "audia5",
+        "audia6",
+        "audia7",
+        "audis1",
+        "audis2",
+        "audis3",
+        "audis4",
+        "audis5",
+        "audis6",
+        "audis7",
+        "audirs1",
+        "audirs2",
+        "audirs3",
+        "audirs4",
+        "audirs5",
+        "audirs6",
+        "audirs7",
+        "audiq1",
+        "audiq2",
+        "audiq3",
+        "audiq4",
+        "audiq5",
+        "audiq6"
+
+
+
+      ];
+      let ol = document.getElementById("pp");
+      let l = 1;
+
+      for (i in x) {
+        ol.innerHTML += "<li>" + ordinal_suffix_of(l) + " " + x[i] + "</li>";
+        l++;
+      }
+
+    </script>
+
+<a class="nav-link" href="index2.html" target="_self"><b>opdracht1</b></a>
+
+<div id="validatie">
+
+
+    <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+        <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+        <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+    </a>
+</div>
+
+<img src="ik.jpg" alt="">
+
+</P> </body>
+  
+</html>
